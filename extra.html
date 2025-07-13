@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alternating Shooting Star</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: black;
+      overflow: hidden;
+    }
+
+    .sky {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .shooting-star {
+      position: absolute;
+      top: 20vh;
+      left: 30vw;
+      width: 150px;
+      height: 2px;
+      background: linear-gradient(45deg, white, rgba(255,255,255,0));
+      transform: rotate(45deg);
+      opacity: 0;
+    }
+
+    @keyframes move-forward {
+      0% {
+        top: 20vh;
+        left: 30vw;
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      100% {
+        top: 60vh;
+        left: 60vw;
+        opacity: 1;
+      }
+    }
+
+    @keyframes move-backward {
+      0% {
+        top: 60vh;
+        left: 60vw;
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      100% {
+        top: 20vh;
+        left: 30vw;
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sky">
+    <div class="shooting-star" id="star"></div>
+  </div>
+
+  <script>
+    const star = document.getElementById('star');
+    let forward = true;
+
+    function animateStar() {
+  star.style.animation = 'none';
+  void star.offsetWidth;
+
+  if (forward) {
+    // Down-right
+    star.style.top = '20vh';
+    star.style.left = '30vw';
+    star.style.background = 'linear-gradient(to right, transparent, #fff, transparent)';
+    star.style.transform = 'rotate(45deg)';
+    star.style.animation = 'move-forward 4s linear forwards';
+  } else {
+    // Up-left
+    star.style.top = '60vh';
+    star.style.left = '60vw';
+    star.style.background = 'linear-gradient(to right, transparent, #fff, transparent)';
+    star.style.transform = 'rotate(-135deg)';
+    star.style.animation = 'move-backward 4s linear forwards';
+  }
+
+  forward = !forward;
+  setTimeout(animateStar, 4000);
+}
+
+
+    animateStar();
+  </script>
+</body>
+</html>
