@@ -128,3 +128,33 @@ const texts = ["Frontend Developer","Backend Developer","Full Stack Developer","
     element.classList.add('visible'); // trigger CSS animation
     type();
   });
+
+
+// ===================== Icons Fade In Effect =====================
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const icons = document.querySelectorAll('.tech-icons img');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add 'visible' class to each icon with delay
+          icons.forEach((icon, index) => {
+            setTimeout(() => {
+              icon.classList.add('visible');
+            }, index * 200); // 200ms gap between icons
+          });
+          observer.unobserve(entry.target); // Run only once
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const section = document.querySelector('#about');
+    if (section) {
+      observer.observe(section);
+    }
+  });
+
+
+// 
+
