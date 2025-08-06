@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ===================== NavBar - Role =====================
-  const element = document.querySelector('.navbar-role');
+const element = document.querySelector('.navbar-role');
 const texts = ["Frontend Developer","Backend Developer","Full Stack Developer","Problem Solver","Coder","Builder","Creator"
 ];
   let textIndex = 0;
@@ -156,5 +156,29 @@ const texts = ["Frontend Developer","Backend Developer","Full Stack Developer","
   });
 
 
-// 
+
+document.querySelector(".hamburger img").addEventListener("click", () => {
+    // document.querySelector(".navbar").style.left = "0";
+    document.querySelector(".navbar").classList.add("btn-active");
+    // document.body.style.overflow = "hidden";
+    // console.log("hamburger")
+})
+
+document.querySelector(".close").addEventListener("click", () => {
+    document.querySelector(".navbar").classList.remove("btn-active");
+    // document.body.style.overflow = "auto";
+})
+
+// Close navbar if click happens outside
+document.addEventListener('click', function (event) {
+    if (
+        window.innerWidth <= 700 &&
+        document.querySelector('.navbar').classList.contains('btn-active') &&
+        !document.querySelector('.navbar').contains(event.target) &&
+        !document.querySelector('.hamburger').contains(event.target)
+    ) {
+        document.querySelector('.navbar').classList.remove('btn-active');
+        // document.body.style.overflow = "auto";
+    }
+});
 

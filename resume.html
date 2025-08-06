@@ -14,23 +14,32 @@
 </head>
 <body>
   <!-- NavBar -->
-  <nav>
-    <ul>
-      <li><a href="index.html#home">Home</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-      <li><a href="resume.html">Resume</a></li>
-    </ul>
-    <span class="navbar-role">Web Developer</span>
-  </nav>
+      <div class="nav-container">
+        <div class="hamburger">
+            <img src="images/hamburger.svg" alt="hamburger">
+        </div>
+        <nav class = "navbar">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+            <div class="close">
+                <img src="images/close.svg" alt="close">
+            </div>
+            <!-- <span class="navbar-role"></span> -->
+        </nav>
+        <div class="navbar-role"></div>
+    </div>
 
   <!-- Resume Section -->
   <div class="resume-section">
-    <a href="resume/ZahraQaisar.pdf" download class="download-btn">Download Resume</a>
     <div class="pdf-container">
-    <embed src="resume/ZahraQaisar.pdf#view=FitH" type="application/pdf" width="100%" height="150%">
-    </div>
+      <embed src="resume/ZahraQaisar.pdf#view=FitH" type="application/pdf" width="100%" height="150%">
+      </div>
+      <a href="resume/ZahraQaisar.pdf" download class="download-btn">Download Resume</a>
   </div>
 
 

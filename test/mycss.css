@@ -1,0 +1,168 @@
+/* body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    position: relative;
+    margin: 50px;
+}
+
+.sloped-line {
+    width: 700px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+    transform-origin: left;
+    position: relative;
+    left: 450px;
+    top: 40px;
+}
+
+.faded {
+    width: 70px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, white, white, transparent);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 415px;
+    z-index: 1;
+    transform: rotate(45deg);
+    animation: moveDiagonal 3s linear infinite;
+}
+
+@keyframes moveDiagonal {
+    0% {
+        transform: translate(0, 0) rotate(45deg);
+    }
+
+    100% {
+        transform: translate(500px, 500px) rotate(45deg);
+    }
+} */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Desktop Styles ---------- */
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.hamburger img {
+    display: none; /* Show only on mobile */
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: left 1s ease;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav li a {
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.close {
+    display: none;
+}
+
+.myimage {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.myimage img {
+    width: 30px;
+    height: auto;
+}
+
+
+/* ---------- Mobile Styles ---------- */
+
+@media (max-width: 700px) {
+    .container {
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        height: 10vh;
+        width: 100vw;
+        padding: 20px;
+        left: 0;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        left: -100%;
+        position: absolute;
+        top: 0;
+        background-color: black;
+        color: white;
+        height: 100vh;
+        width: 60vw;
+        padding: 20px;
+        transition: left 0.5s ease;
+    }
+
+    .navbar.btn-active {
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    nav li {
+        padding-bottom: 20px;
+    }
+
+    .hamburger img {
+        display: block;
+        position: absolute;
+        height: 30px;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .close img {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .myimage {
+        display: none;
+    }
+}
