@@ -545,8 +545,8 @@ footer {
         width: 100vw;
         height: fit-content;
         padding-left: 20px;
-        padding-bottom: 190px;
-        padding-top: 153px;
+        padding-bottom: 260px;
+        padding-top: 195px;
         padding-right: 114px;
     }
 
@@ -556,7 +556,7 @@ footer {
     }
 
     .container p {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .container-separator {
