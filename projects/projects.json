@@ -5,7 +5,8 @@
     },
     {
         "name": "Zauq-App",
-        "description": "Built a responsive audio player inspired by Spotify. Added customizations like Islamic nasheed content, UI styling, and additional playback features. Helped strengthen understanding of DOM, audio API, and dynamic content rendering."
+        "description": "Built a responsive audio player inspired by Spotify. Added customizations like Islamic nasheed content, UI styling, and additional playback features. Helped strengthen understanding of DOM, audio API, and dynamic content rendering.",
+        "link" : "https://zahraqaisar.github.io/Zauq-App/"
     },
     {
         "name": "CourierBox",
