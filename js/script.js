@@ -185,6 +185,7 @@ document.addEventListener('click', function (event) {
 fetch('projects/projects.json')
   .then(response => response.json())
   .then(data => {
+    console.log(data)
     const container = document.getElementById('projects-container');
 
     data.forEach(project => {
