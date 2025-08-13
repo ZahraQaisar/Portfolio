@@ -1,7 +1,8 @@
 [
     {
         "name": "Portfolio Website",
-        "description": "A fully custom personal portfolio built with HTML, CSS, and vanilla JavaScript. Features smooth scroll animations, typing effect, responsive navbar, and dynamic project rendering from a JSON file."
+        "description": "A fully custom personal portfolio built with HTML, CSS, and vanilla JavaScript. Features smooth scroll animations, typing effect, responsive navbar, and dynamic project rendering from a JSON file.",
+        "link" : "https://zahraqaisar.github.io/Portfolio/"
     },
     {
         "name": "Zauq-App",
@@ -10,14 +11,17 @@
     },
     {
         "name": "CourierBox",
-        "description": "A full-stack courier booking and tracking system built with the MERN stack. Users can regsiter, log-in/log-out, book parcels and track delivery; admins manage and update parcel status through a secure dashboard."
+        "description": "A full-stack courier booking and tracking system built with the MERN stack. Users can regsiter, log-in/log-out, book parcels and track delivery; admins manage and update parcel status through a secure dashboard.",
+        "link" : "https://zahraqaisar.github.io/Portfolio/"
     },
     {
         "name": "TaskEase",
-        "description": "Django-based service finder app to hire helpers (maids, drivers, guards) by category and location. Includes user profiles registering, log-in/out, and an admin dashboard for managing listings."
+        "description": "Django-based service finder app to hire helpers (maids, drivers, guards) by category and location. Includes user profiles registering, log-in/out, and an admin dashboard for managing listings.",
+        "link" : "https://zahraqaisar.github.io/Portfolio/"
     },
     {
         "name": "MovieApp",
-        "description": "A Django-based entertainment platform where users can view movies, read about celebrities, subscribe, log in/out, and comment on blogs. Includes user authentication and blog interaction features."
+        "description": "A Django-based entertainment platform where users can view movies, read about celebrities, subscribe, log in/out, and comment on blogs. Includes user authentication and blog interaction features.",
+        "link" : "https://zahraqaisar.github.io/Portfolio/"
     }
 ]
