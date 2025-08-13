@@ -194,7 +194,7 @@ fetch('projects/projects.json')
       card.innerHTML = `<h2>${project.name}</h2>
                       <hr class = "project-separator">
                       <p>${project.description}</p>
-                      <a href="${project.link}">Click to Preview</a>`;
+                      <a href=${project.link}>Click to Preview</a>`;
 
       container.appendChild(card);
     });
