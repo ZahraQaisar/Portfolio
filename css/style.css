@@ -419,15 +419,16 @@ footer {
 }
 
 .pdf-container {
-    background-color: rgb(0, 0, 0);
-    width: 30%;
-    height: 100vh;
+    width: 60%;                /* good readable size */
+    aspect-ratio: 1 / 1.41;    /* A4 ratio */
+    background: #000;
     border: 2px solid #ccc;
-    overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 .pdf-container embed {
     width: 100%;
