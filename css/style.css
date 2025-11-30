@@ -413,19 +413,22 @@ footer {
 /* ============== Resume Section Layout ============== */
 .resume-section {
     background: #000;
-    height: 100vh;
+    min-height: calc(100vh - 80px); /* space minus footer */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
+
 .resume-image {
-    max-height: 80vh;
+    max-height: 75vh;
     width: auto;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
+
 
 
 /* Download button */
