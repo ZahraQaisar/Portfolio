@@ -420,13 +420,13 @@ footer {
 
 .pdf-container {
     background-color: rgb(0, 0, 0);
-    width: 30%;
+    /* width: 30%;
     height: 200%;
     border: 2px solid #ccc;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 20px; */
 }
 
 .pdf-container embed {
