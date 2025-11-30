@@ -411,12 +411,36 @@ footer {
 
 
 /* ============== Resume Section Layout ============== */
+/* Resume page container */
 .resume-section {
-    background-color: rgb(0, 0, 0);
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;              /* full screen */
+    padding: 0;
+    margin: 0;
 }
+
+/* Wrapper that fills the screen height */
+.pdf-wrapper {
+    height: calc(100vh - 80px); /* leave space for the button */
+    width: auto;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;           /* no scroll */
+}
+
+/* PDF always fits inside wrapper */
+.pdf-frame {
+    height: 100%;
+    width: auto;
+    border: none;
+}
+
 
 .pdf-container {
     width: 60%;                /* good readable size */
