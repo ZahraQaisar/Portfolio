@@ -5,9 +5,24 @@
         "link" : "https://zahraqaisar.github.io/Portfolio/"
     },
     {
-        "name": "Zauq-App",
-        "description": "Built a responsive audio player inspired by Spotify. Added customizations like Islamic nasheed content, UI styling, and additional playback features. Helped strengthen understanding of DOM, audio API, and dynamic content rendering.",
-        "link" : "https://zahraqaisar.github.io/Zauq-App/"
+        "name": "Spotify Clone",
+        "description": "Built a responsive Spotify-style music interface using React, Tailwind CSS, and JSON-based data for tracks and playlists. Implemented reusable UI components, playlist browsing, and modern styling to replicate core Spotify UI elements.",
+        "link" : "https://spotify-clone-webify.vercel.app"
+    },
+    {
+        "name": "Google Forms",
+        "description": "Built a Google Forms clone using the MERN stack with full form creation and response storage. Implemented JWT authentication, secure REST APIs, and a responsive UI using Tailwind CSS.",
+        "link" : "https://google-form-frontend-live.vercel.app"
+    },
+    {
+        "name": "Forever E-commerce",
+        "description": "Built a fully functional E-commerce platform using the MERN stack with user authentication, product browsing, cart management, and order placement integrated with MongoDB.Developed an admin dashboard to add/remove products, manage inventory, and view customer orders using secure REST APIs and a responsive frontend.",
+        "link" : "https://forever-frontend-taupe-iota.vercel.app"
+    },
+    {
+        "name": "Real-Estate",
+        "description": "Built a responsive real estate website with property listings and search functionality.Created interactive UI components using React.js and styled with Tailwind CSS. Focused on clean design and mobile-friendly layout.",
+        "link" : "https://agency-ai-webify.netlify.app"
     },
     {
         "name": "CourierBox",
